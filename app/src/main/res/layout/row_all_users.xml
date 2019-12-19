@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="allListModel"
+            type="engineer.babu.chatapplication.data.model.UserModel" />
+    </data>
+
+    <RelativeLayout
+        android:id="@+id/root_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:id="@+id/root_frame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/civ_profile_pic"
+                android:layout_width="@dimen/dp_70"
+                android:layout_height="@dimen/dp_70"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dp_10"
+                android:src="@drawable/icon_user" />
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_ok"
+                android:layout_width="@dimen/dp_25"
+                android:layout_height="@dimen/dp_25"
+                android:layout_gravity="end|bottom"
+                android:src="@drawable/ic_launcher_background"
+                android:visibility="gone" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/civ_online_status"
+            android:layout_toRightOf="@id/root_frame"
+            android:orientation="vertical"
+            android:padding="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PC Patidar"
+                android:textColor="@android:color/black"
+                app:name="@{allListModel.name}"
+                android:textSize="@dimen/big" />
+
+            <TextView
+                android:id="@+id/tv_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="Busy"
+                app:status="@{allListModel.status}"
+                android:textSize="@dimen/normal" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_1"
+            android:layout_below="@id/root_frame"
+            android:background="@color/colorPrimaryDark" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@id/civ_online_status"
+            android:layout_width="@dimen/dp_15"
+            android:layout_height="@dimen/dp_15"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dp_15"
+            android:layout_marginRight="@dimen/dp_10"
+            android:src="@android:color/holo_green_dark"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</layout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="allListModel"
+            type="engineer.babu.chatapplication.data.model.Person" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingVertical="10dp"
+        android:paddingLeft="60dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_my_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/my_message"
+            android:elevation="2dp"
+            android:padding="10dp"
+            android:text="My Message ?"
+            android:textColor="#fff"
+            android:textSize="18dp" />
+    </RelativeLayout>
+</layout>

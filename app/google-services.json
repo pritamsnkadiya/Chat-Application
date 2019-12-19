@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "123367534931",
+    "firebase_url": "https://realtime-db-4dab5.firebaseio.com",
+    "project_id": "realtime-db-4dab5",
+    "storage_bucket": "realtime-db-4dab5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123367534931:android:f06700781c6b3e0226b1a6",
+        "android_client_info": {
+          "package_name": "engineer.babu.chatapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123367534931-5ksuqfddd2rqi3fasamsti26pntue8om.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMmFhQeAuiBLA5rw_pu1dirDH5gLELARg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123367534931-5ksuqfddd2rqi3fasamsti26pntue8om.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

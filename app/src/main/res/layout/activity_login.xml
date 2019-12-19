@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.ui.activity.login.LoginActivity">
+
+    <data>
+
+        <variable
+            name="loginView"
+            type="engineer.babu.chatapplication.ui.activity.login.LoginViewModel" />
+
+        <variable
+            name="presenter"
+            type="engineer.babu.chatapplication.ui.presenter.Presenter" />
+    </data>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/activity_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"
+            tools:context=".Activity.LoginSignUpActivity">
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="85dp"
+                android:layout_marginRight="60dp"
+                android:background="@drawable/frontpageimage" />
+
+            <TextView
+                android:id="@+id/welcometv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageview"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:text="Welcome To eB Chat"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/loginPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/welcometv"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="60dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="ALREADY HAVE ACCOUNT"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold|italic" />
+
+            <TextView
+                android:id="@+id/signupPage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loginPage"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginRight="60dp"
+                android:background="@color/white"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="Create a New Account"
+                android:textColor="@color/colorPrimaryDark"
+                android:textStyle="bold|italic" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.facebook.login.widget.LoginButton
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:paddingTop="15dp"
+                android:paddingBottom="15dp" />
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/sign_in_button"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginLeft="10dp" />
+
+        </LinearLayout>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>

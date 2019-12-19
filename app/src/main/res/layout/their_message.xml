@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="allListModel"
+            type="engineer.babu.chatapplication.data.model.Person" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:paddingVertical="10dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="60dp">
+
+        <View
+            android:id="@+id/avatar"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/circle"
+            android:scaleType="centerInside" />
+
+        <TextView
+            android:id="@+id/tv_their_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/avatar"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/avatar"
+            android:paddingBottom="4dp"
+            android:text="Preet" />
+
+        <TextView
+            android:id="@+id/tv_their_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_their_name"
+            android:layout_alignLeft="@+id/tv_their_name"
+            android:background="@drawable/their_message"
+            android:elevation="2dp"
+            android:paddingHorizontal="16dp"
+            android:paddingVertical="12dp"
+            android:text="There Message "
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+</layout>
